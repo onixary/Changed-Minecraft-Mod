@@ -209,14 +209,14 @@ public class WaveVisionRenderer {
         this.renderChunkLayer(RenderType.cutoutMipped(), ChangedShaders.waveVisionCutoutMipped(), poseStack, camX, camY, camZ, projectionMatrix);
         ChangedClient.setWaveResonance(LATEX_RESONANCE_NEUTRAL);
         this.renderChunkLayer(ChangedShaders.waveVisionResonantCutoutMipped(LATEX_RESONANCE_NEUTRAL), poseStack, camX, camY, camZ, projectionMatrix);
-        //this.renderChunkLayer(RenderType.cutoutMipped(), ChangedShaders.latexWaveVisionCutoutMipped(), poseStack, camX, camY, camZ, projectionMatrix);
+        this.renderChunkLayer(ChangedShaders.latexCutoutMipped(), ChangedShaders.latexWaveVisionCutoutMipped(), poseStack, camX, camY, camZ, projectionMatrix);
 
         ChangedClient.resetWaveResonance();
         this.minecraft.getModelManager().getAtlas(TextureAtlas.LOCATION_BLOCKS).restoreLastBlurMipmap();
         this.renderChunkLayer(RenderType.cutout(), ChangedShaders.waveVisionCutout(), poseStack, camX, camY, camZ, projectionMatrix);
         ChangedClient.setWaveResonance(LATEX_RESONANCE_NEUTRAL);
         this.renderChunkLayer(ChangedShaders.waveVisionResonantCutout(LATEX_RESONANCE_NEUTRAL), poseStack, camX, camY, camZ, projectionMatrix);
-        //this.renderChunkLayer(RenderType.cutout(), ChangedShaders.latexWaveVisionCutout(), poseStack, camX, camY, camZ, projectionMatrix);
+        this.renderChunkLayer(ChangedShaders.latexCutout(), ChangedShaders.latexWaveVisionCutout(), poseStack, camX, camY, camZ, projectionMatrix);
 
         ChangedClient.resetWaveResonance();
     }
