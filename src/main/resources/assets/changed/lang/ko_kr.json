@@ -682,7 +682,7 @@
   "changed.config.bpi.size": "모델 크기",
   "changed.config.bpi.size.value": "크기: %s%%",
   "changed.config.bpi.override_dl_iris": "검은 점액 변종에서 홍채 색 무시",
-  "changed.config.bpi.override_all_eye_styles": "모든 눈 형태 무시"
+  "changed.config.bpi.override_all_eye_styles": "모든 눈 형태 무시",
 
   "changed.stasis.slot.variant.tooltip": "TF 프로그램에 사용할 점액 샘플",
   "changed.stasis.slot.fluid.tooltip": "정체실을 채울 유체 탱크",
